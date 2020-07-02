@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:gmu="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:padding="5dip">
+    <!--<org.gmu.ui.GmuTextView-->
+    <!--android:id="@+id/detailtext"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="bla bla bla"-->
+    <!--android:textIsSelectable="true"-->
+    <!--android:textSize="20dip"-->
+    <!--gmu:ttf_name="Omnes-Medium"-->
+
+    <!--/>-->
+    <TextView
+            android:id="@+id/detailtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dip"
+            android:text="bla bla bla"
+            android:textIsSelectable="true"
+
+
+            />
+
+</LinearLayout>

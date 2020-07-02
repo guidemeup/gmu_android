@@ -1,0 +1,29 @@
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_window_focused="false"  android:drawable="@drawable/boton_azul"/>
+    <item android:state_window_focused="false"  android:state_enabled="false" android:drawable="@drawable/abs__list_selector_disabled_holo_dark"/>
+
+
+
+
+
+  <item android:state_focused="true" android:state_enabled="false" android:state_pressed="true"
+          android:drawable="@drawable/abs__list_selector_disabled_holo_dark"/>
+    <item android:state_focused="true" android:state_enabled="false"
+          android:drawable="@drawable/abs__list_selector_disabled_holo_dark"/>
+    <item android:state_focused="true" android:state_pressed="true"
+          android:drawable="@drawable/abs__list_selector_background_transition_holo_dark"/>
+    <item android:state_focused="false" android:state_pressed="true"
+          android:drawable="@drawable/abs__list_selector_background_transition_holo_dark"/>
+    <item android:state_focused="true" android:drawable="@drawable/abs__list_focused_holo"/>
+
+
+
+
+
+
+</selector>-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/guideunselected" android:state_pressed="true" />
+    <item android:drawable="@drawable/guideselected" />
+</selector>

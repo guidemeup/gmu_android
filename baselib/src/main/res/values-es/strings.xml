@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="app_name">GuideMeUp</string>-->
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="close_app">¿Cerrar App?</string>
+    <string name="delete_guide">¿Borrar la guía?</string>
+    <string name="offline_mode_msg">Mode Offline Activado: no se utilizará su acceso a Internet para obtener los mapas.
+        La cobertura de mapa está reducida al área que contiene esta guia
+    </string>
+    <string name="online_mode_msg">Modo Online Activado: se utilizará su acceso a Internet para obtener los mapas. La
+        cobertura del mapa es mundial
+    </string>
+    <string name="free">Gratuita</string>
+    <string name="open">Abrir</string>
+    <string name="download">Descargar</string>
+    <string name="downloadmore">Descargar más guías</string>
+    <string name="showdownloaded">Ver guías descargadas</string>
+    <string name="checkupdates">Buscando actualizaciones</string>
+    <string name="updating">Actualizando datos, puede tardar varios minutos...</string>
+    <string name="downloaded">Descargados</string>
+    <string name="search">Búsqueda</string>
+    <string name="mapview">Vista Mapa</string>
+    <string name="center_location">Centrar en mi posición</string>
+    <string name="center_map">Centrar en el mapa</string>
+    <string name="show_on_maps">Mostrar en GMaps</string>
+    <string name="favorite_on">Filtro favoritos activado</string>
+    <string name="favorite_off">Filtro favoritos desactivado</string>
+    <string name="syncguide">Cargando datos de la guía</string>
+    <string name="general_data">Datos generales</string>
+    <string name="updateprompt">Hay actualizaciones disponibles para esta guia.\n¿Desea actualizar?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="no_downloaded">No dispone de guías descargadas</string>
+    <string name="no_available">Ya ha descargado todas las guías disponibles</string>
+    <string name="distance_in">a #distance#</string>
+    <string name="share">Compartir</string>
+    <string name="refresh">Refrescar</string>
+    <string name="updated_elements">elementos actualizados</string>
+    <string name="private_access">Accediendo a su guía</string>
+    <string name="updating_rt">Actualizando datos en tiempo real</string>
+    <string name="mainupdateprompt">Error descargando la información inicial.\nRevisa tus parámetros de conexión o inténtalo más tarde.</string>
+    <string name="errorupdateprompt">Error descargando la guía.\nRevisa tus parámetros de conexión o inténtalo más tarde.</string>
+    <string name="exit">Salir</string>
+    <string name="retry">Reintentar</string>
+    <string name="nogpsperm">Error: No ha dado permisos de acceso al gps</string>
+    <!--Begin: PlaceElement attributes-->
+    <string name="pla_description">Descripción</string>
+    <string name="pla_address">Dirección</string>
+    <string name="pla_timetable">Horario</string>
+    <string name="pla_contact">Contacto</string>
+    <string name="pla_copyright">Copyright</string>
+    <string name="pla_creation_date">Fecha de creación</string>
+    <string name="pla_rt_status">Estado actual</string>
+
+    <!--End: PlaceElement attributes-->
+
+    <!--Begin: category attributes-->
+    <string name="cat_poi">Punto de interés</string>
+    <string name="cat_arch">Arquitectura</string>
+    <string name="cat_route">Ruta</string>
+    <string name="cat_transport">Transporte</string>
+    <string name="cat_see">Ver</string>
+    <string name="cat_restaurant">Comer</string>
+    <string name="cat_museum">Museo</string>
+    <string name="cat_information">Información</string>
+    <string name="cat_hotel">Hotel</string>
+    <string name="cat_event">Evento organizado</string>
+    <string name="cat_activity">Actividad</string>
+    <string name="cat_bar">Bar</string>
+    <string name="cat_whattodo">Qué hacer</string>
+    <string name="cat_shopping">Compras</string>
+    <string name="cat_bar_coktail">Bar</string>
+    <string name="cat_cycling">Bici</string>
+    <string name="cat_taxi">Taxi</string>
+    <string name="cat_train">Tren</string>
+    <string name="cat_cycling_park">Parking Bici</string>
+    <string name="cat_parking">Parking</string>
+    <string name="cat_bicing">Bicing</string>
+    <string name="cat_discount">Descuento</string>
+    <string name="cat_itinerary">Paseo guiado</string>
+    <string name="cat_empty"> </string>
+    <string name="cat_gym">Gimnasio</string>
+    <string name="cat_coffee">Café</string>
+    <string name="cat_beach">Playa</string>
+    <string name="cat_gstation">Gasolinera</string>
+    <string name="cat_restate">Inmobiliaria</string>
+    <string name="cat_nautica">Náutica</string>
+    <string name="cat_carrent">Alquiler coches</string>
+    <string name="cat_bus">Bus</string>
+
+
+
+
+</resources>

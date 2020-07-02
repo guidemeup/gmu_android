@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:gmu="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@drawable/action_button_selector_background"
+        android:id="@+id/actionbutton"
+        >
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+            >
+        <!--android:background="@drawable/boton_verde">-->
+        <org.gmu.ui.GmuTextView
+                android:id="@+id/actionbutton_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Descargar"
+                android:textStyle="bold"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="?attr/gmu_text_color"
+                android:textSize="20dip"
+                gmu:ttf_name="Omnes-Medium"
+                android:gravity="center"
+                />
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="fill_parent"
+                   android:src="@drawable/av_download_dark"
+                   android:layout_toRightOf="@+id/actionbutton_text"
+                />
+    </RelativeLayout>
+
+</LinearLayout>

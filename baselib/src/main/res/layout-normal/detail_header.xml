@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:gmu="http://schemas.android.com/apk/res-auto"
+        >
+    <org.gmu.ui.GmuTextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:text="Description"
+            android:layout_height="wrap_content"
+            gmu:ttf_name="Omnes-Black"
+            android:textSize="15dip"
+            />
+
+</LinearLayout>

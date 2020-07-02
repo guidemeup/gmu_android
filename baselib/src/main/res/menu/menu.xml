@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:id="@+id/listmenu">
+
+
+        <item
+                android:id="@+id/menu_search"
+                android:title="@string/search"
+            android:icon="@drawable/ic_action_search"
+            app:actionViewClass="org.gmu.ui.PlaceSearchView"
+            app:showAsAction="ifRoom|collapseActionView" />
+
+        <item
+                android:id="@+id/menu_switchtomap"
+                android:title="@string/mapview"
+            android:icon="@drawable/ic_action_map"
+            app:showAsAction="ifRoom" />
+
+
+    </group>
+
+
+    <group android:id="@+id/mapmenu">
+
+
+        <!--<item-->
+        <!--android:id="@+id/menu_switchtolist"-->
+        <!--android:title="Change View"-->
+        <!--android:showAsAction="ifRoom"-->
+        <!--android:icon="@drawable/ic_collections_view_as_list"-->
+        <!--android:visibility="gone"/>-->
+        <item
+                android:id="@+id/menu_gps"
+                android:title="@string/center_location"
+                android:showAsAction="ifRoom"
+                android:icon="@drawable/ic_action_location_found"/>
+
+        <item
+                android:id="@+id/menu_refresh_map"
+                android:title="@string/refresh"
+                android:showAsAction="ifRoom"
+                android:icon="@drawable/ic_action_refresh"/>
+
+
+        <!--<item-->
+        <!--android:id="@+id/menu_offline"-->
+        <!--android:title="Offline Mode on/off"-->
+        <!--android:showAsAction="ifRoom"-->
+        <!--android:icon="@drawable/ic_offline"/>-->
+
+
+    </group>
+
+
+    <group android:id="@+id/detail_menu">
+        <item
+                android:id="@+id/menu_centeronmap"
+                android:title="@string/center_map"
+                android:showAsAction="ifRoom"
+                android:icon="@drawable/ic_action_place"/>
+        <item
+                android:id="@+id/menu_share"
+                android:title="@string/share"
+                android:showAsAction="ifRoom"
+                android:icon="@drawable/ic_action_share"/>
+        <item
+                android:id="@+id/menu_directions"
+                android:title="@string/show_on_maps"
+                android:showAsAction="ifRoom"
+                android:icon="@drawable/ic_action_directions"/>
+
+        <item
+                android:id="@+id/menu_refresh"
+                android:title="@string/refresh"
+                android:showAsAction="ifRoom"
+                android:icon="@drawable/ic_action_refresh"/>
+
+
+    </group>
+    <group android:id="@+id/filters">
+
+        <item
+                android:id="@+id/menu_favorite"
+                android:title="@string/favorite_off"
+                android:showAsAction="ifRoom"
+                android:icon="@drawable/ic_action_favorite_off"/>
+
+
+        <item android:id="@+id/menuitem_theme" android:showAsAction="ifRoom"
+              android:title="NextTheme"/>
+    </group>
+
+</menu>

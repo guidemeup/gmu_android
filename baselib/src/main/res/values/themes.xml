@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="GMU.Theme.Sherlock" parent="Theme.AppCompat">
+        <!--<item name="ic_action_search" >@drawable/ic_action_search</item>-->
+        <item name="gmu_text_color">#EDF0F0</item>
+        <item name="infowindow2">@drawable/infowindow2</item>
+        <item name="navigation_next_item">@drawable/navigation_next_item_dark</item>
+    </style>
+
+    <style name="GMU.Theme.Sherlock.Light.DarkActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="gmu_text_color">#000000</item>
+        <item name="infowindow2">@drawable/infowindow2_light</item>
+        <item name="navigation_next_item">@drawable/navigation_next_item_light</item>
+    </style>
+
+</resources>

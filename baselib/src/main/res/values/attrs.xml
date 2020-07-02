@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GmuTextView">
+
+        <attr name="ttf_name" format="string"/>
+        <attr name="ttf_style" format="string"/>
+        <attr name="ttf_selectable" format="string"/>
+        <attr name="gmu_text_color" format="color"/>
+    </declare-styleable>
+
+     <attr name="infowindow2" format="reference"/>
+    <attr name="navigation_next_item" format="reference"/>
+
+
+
+</resources>

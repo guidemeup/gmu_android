@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GuideMeUp</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="close_app">Close App?</string>
+    <string name="delete_guide">Remove guide?</string>
+    <string name="offline_mode_msg">Offline Mode Active: your internet connection is not used to download the maps.\n
+        Map coverage is reduced to the guide area
+    </string>
+    <string name="online_mode_msg">Online Mode Active: your internet connection is used to download the maps.\n
+        Map coverage is worldwide
+    </string>
+    <string name="free">Free</string>
+    <string name="open">Open</string>
+    <string name="download">Download</string>
+    <string name="downloadmore">Download more guides</string>
+    <string name="showdownloaded">Show downloaded guides</string>
+    <string name="checkupdates">Searching for updates</string>
+    <string name="updating">Updating, may take several minutes…</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="search">Search</string>
+    <string name="mapview">Map view</string>
+    <string name="center_location">Center my current location</string>
+    <string name="center_map">Centrar on map</string>
+    <string name="show_on_maps">Show on GMaps</string>
+    <string name="favorite_on">Favorite filter enabled</string>
+    <string name="favorite_off">Favorite filter disabled</string>
+    <string name="syncguide">Loading guide</string>
+    <string name="general_data">General data</string>
+    <string name="updateprompt">There are available updates for this guide.\n Update?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="no_downloaded">No downloaded guides available</string>
+    <string name="no_available">You have already downloaded all available guides</string>
+    <string name="distance_in">#distance# away</string>
+    <string name="share">Share</string>
+    <string name="refresh">Refresh</string>
+    <string name="updated_elements">elements updated</string>
+    <string name="private_access">Accessing your guide</string>
+    <string name="updating_rt">Updating real time data</string>
+    <string name="mainupdateprompt">Error downloading startup information.\nPlease check your connection settings or try later.</string>
+    <string name="errorupdateprompt">Error downloading guide.\nPlease check your connection settings or try later.</string>
+    <string name="exit">Exit</string>
+    <string name="retry">Retry</string>
+    <string name="nogpsperm">Error: location permission denied</string>
+    <!--Begin: PlaceElement attributes-->
+    <string name="pla_description">Description</string>
+    <string name="pla_address">Address</string>
+    <string name="pla_timetable">Timetable</string>
+    <string name="pla_contact">Contact</string>
+    <string name="pla_copyright">Copyright</string>
+    <string name="pla_creation_date">Creation date</string>
+    <string name="pla_rt_status">Current status</string>
+    <!--End: PlaceElement attributes-->
+
+    <!--Begin: category attributes-->
+    <string name="cat_poi">Point of interest</string>
+    <string name="cat_arch">Architecture</string>
+    <string name="cat_route">Route</string>
+    <string name="cat_transport">Transport</string>
+    <string name="cat_see">See</string>
+    <string name="cat_restaurant">Food</string>
+    <string name="cat_museum">Museum</string>
+    <string name="cat_information">Information</string>
+    <string name="cat_hotel">Hotel</string>
+    <string name="cat_event">Organized event</string>
+    <string name="cat_activity">Activity</string>
+    <string name="cat_bar">Bar</string>
+    <string name="cat_whattodo">What to do</string>
+    <string name="cat_shopping">Shopping</string>
+    <string name="cat_bar_coktail">Bar</string>
+    <string name="cat_cycling">Bike</string>
+    <string name="cat_taxi">Taxi</string>
+    <string name="cat_train">Train</string>
+    <string name="cat_cycling_park">Bicycle parking</string>
+    <string name="cat_parking">Parking</string>
+    <string name="cat_bicing">Bicing</string>
+	<string name="cat_discount">Discount</string>
+    <string name="cat_itinerary">Guided walk</string>
+    <string name="cat_empty"> </string>
+    <string name="cat_gym">Gym</string>
+    <string name="cat_coffee">Coffee</string>
+    <string name="cat_beach">Beach</string>
+    <string name="cat_gstation">Gas station</string>
+    <string name="cat_restate">Real estate</string>
+    <string name="cat_nautica">Nautica</string>
+    <string name="cat_carrent">Car Rental</string>
+    <string name="cat_bus">Bus</string>
+    <!--WAM categories-->
+
+    <string name="cat_wamsc_41">Centro de interpretación</string>
+    <string name="cat_wamsc_33">Proyecto</string>
+    <string name="cat_wamsc_24">Museo</string>
+    <string name="cat_wamsc_27">Espacio expositivo</string>
+    <string name="cat_wamsc_9">Arquitectura</string>
+    <string name="cat_wamsc_12">Escultura</string>
+    <string name="cat_wamsc_36">Asociación</string>
+    <string name="cat_wamsc_23">Fundación</string>
+    <string name="cat_wamsc_34">Sketch</string>
+    <string name="cat_wamsc_32">Literatura</string>
+    <string name="cat_wamsc_30">Otros eventos</string>
+    <string name="cat_wamsc_14">Wallcovering</string>
+    <string name="cat_wamsc_13">Intervención</string>
+    <string name="cat_wamsc_15">Festival</string>
+    <string name="cat_wamsc_16">Exposición urbana</string>
+    <string name="cat_wamsc_28">Otros espacios</string>
+
+</resources>

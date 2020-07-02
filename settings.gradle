@@ -1,0 +1,4 @@
+include ':senderistk'
+include ':baselib'
+include ':app'
+rootProject.name='Root GuideMeUp Android'

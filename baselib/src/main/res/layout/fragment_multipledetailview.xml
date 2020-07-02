@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/lib-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+
+                        android:id="@+id/detailArea">
+
+
+        <org.gmu.ui.GmuViewPager android:id="@+id/detailPager"
+                                           android:layout_width="fill_parent"
+                                           android:layout_height="fill_parent"
+                                           android:paddingBottom="30dip"
+                                           >
+
+
+        </org.gmu.ui.GmuViewPager>
+            <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:padding="10dip"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    app:radius="5dp"
+                    app:fillColor="#FF00ddff"
+                    app:pageColor="#DD0099cc"
+                    app:strokeColor="#FF000000"
+                    app:strokeWidth="2dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dip"
+                    />
+
+        </RelativeLayout>
+
+
+</LinearLayout>
+
+

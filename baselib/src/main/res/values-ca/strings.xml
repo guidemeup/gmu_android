@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="close_app">Tancar App?</string>
+    <string name="delete_guide">Eliminar la guia?</string>
+    <string name="offline_mode_msg">Mode Offline Activat: no s\'utilitzarà el seu accés a Internet per obtenir els mapes.
+        La cobertura està reduida a l\'àrea que conté la guia</string>
+    <string name="online_mode_msg">Mode Online Activat:  s\'utilitzarà el seu accés a Internet per obtenir els mapes.
+        La cobertura del mapa és mundial
+    </string>
+    <string name="free">Gratuïta</string>
+    <string name="open">Obrir</string>
+    <string name="download">Descarregar</string>
+    <string name="downloadmore">Descarregar més guies</string>
+    <string name="showdownloaded">Veure guies descarregades</string>
+    <string name="checkupdates">Cercant actualitzacions</string>
+    <string name="updating">Actualitzant dades, pot trigar minuts...</string>
+    <string name="downloaded">Descarregats</string>
+    <string name="search">Cerca</string>
+    <string name="mapview">Vista Mapa</string>
+    <string name="center_location">Centrar a la meva posició</string>
+    <string name="center_map">Centrar al mapa</string>
+    <string name="show_on_maps">Veure a GMaps</string>
+    <string name="favorite_on">Filtre favorits activat</string>
+    <string name="favorite_off">Filtre favorits desactivat</string>
+    <string name="syncguide">Carregant dades de la guia</string>
+    <string name="general_data">Dades generals</string>
+    <string name="updateprompt">Hi ha actualitzacions disponibles. Descarregar?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="no_downloaded">No disposa de guies descarregades</string>
+    <string name="no_available">Ja ha descarregat totes les guies disponibles</string>
+    <string name="distance_in">a #distance#</string>
+    <string name="share">Compartir</string>
+    <string name="mainupdateprompt">Error descarregant la informació inicial.\nRevisa els teus paràmetres de connexió o torna a intentar més tard.</string>
+    <string name="errorupdateprompt">Error descarregant la guia.\n\nRevisa els teus paràmetres de conexió o torna a intentar més tard.</string>
+    <string name="exit">Sortir</string>
+    <string name="retry">Reintentar</string>
+    <string name="nogpsperm">Error: No ha donat permís per accedir al gps</string>
+    <!--Begin: PlaceElement attributes-->
+    <string name="pla_description">Descripció</string>
+    <string name="pla_address">Adreça</string>
+    <string name="pla_timetable">Horari</string>
+    <string name="pla_contact">Contacte</string>
+    <string name="pla_copyright">Drets de autor</string>
+    <string name="pla_creation_date">Data de creació</string>
+    <string name="pla_rt_status">Estat actual</string>
+    <string name="refresh">Refrescar</string>
+    <string name="updated_elements">elements actualitzats</string>
+    <string name="private_access">Accedint a la seva guia</string>
+    <string name="updating_rt">Actualitzant dades en temps real</string>
+
+    <!--End: PlaceElement attributes-->
+
+    <!--Begin: category attributes-->
+    <string name="cat_poi">Punt de interés</string>
+    <string name="cat_arch">Arquitectura</string>
+    <string name="cat_route">Ruta</string>
+    <string name="cat_transport">Transport</string>
+    <string name="cat_see">Veure</string>
+    <string name="cat_restaurant">Menjar</string>
+    <string name="cat_museum">Museu</string>
+    <string name="cat_information">Informació</string>
+    <string name="cat_hotel">Hotel</string>
+    <string name="cat_event">Event organizat</string>
+    <string name="cat_activity">Activitat</string>
+    <string name="cat_bar">Bar</string>
+    <string name="cat_whattodo">Què fer</string>
+    <string name="cat_shopping">Compres</string>
+    <string name="cat_bar_coktail">Bar</string>
+    <string name="cat_cycling">Bici</string>
+    <string name="cat_taxi">Taxi</string>
+    <string name="cat_train">Tren</string>
+    <string name="cat_cycling_park">Parking Bici</string>
+    <string name="cat_parking">Parking</string>
+    <string name="cat_discount">Descompte</string>
+    <string name="cat_itinerary">Ruta guiada</string>
+    <string name="cat_empty"> </string>
+    <string name="cat_gym">Gimnàs</string>
+    <string name="cat_coffee">Cafè</string>
+    <string name="cat_beach">Platja</string>
+    <string name="cat_gstation">Benzinera</string>
+    <string name="cat_restate">Inmobiliària</string>
+    <string name="cat_nautica">Nàutica</string>
+    <string name="cat_carrent">Lloguer cotxes</string>
+    <string name="cat_bus">Bus</string>
+    <!--WAM categories-->
+
+    <string name="cat_wamsc_41">Centre d\'interpretació</string>
+    <string name="cat_wamsc_33">Projecte</string>
+    <string name="cat_wamsc_27">Espai expositiu</string>
+    <string name="cat_wamsc_9">Arquitectura</string>
+    <string name="cat_wamsc_12">Escultura</string>
+    <string name="cat_wamsc_36">Asociació</string>
+    <string name="cat_wamsc_23">Fundació</string>
+    <string name="cat_wamsc_24">Museu</string>
+    <string name="cat_wamsc_34">Sketch</string>
+    <string name="cat_wamsc_32">Literatura</string>
+    <string name="cat_wamsc_30">Altres events</string>
+    <string name="cat_wamsc_14">Wallcovering</string>
+    <string name="cat_wamsc_13">Intervenció</string>
+    <string name="cat_wamsc_15">Festival</string>
+    <string name="cat_wamsc_16">Exposició urbana</string>
+    <string name="cat_wamsc_28">Altres espais</string>
+
+</resources>

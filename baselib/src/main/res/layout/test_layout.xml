@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              xmlns:gmu="http://schemas.android.com/apk/res-auto"
+              android:layout_height="match_parent">
+
+    <org.gmu.ui.GmuTextView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omnes Regular,26dip #EDF0F0"
+            android:textColor="?attr/gmu_text_color"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="26dip"
+            gmu:ttf_name="Omnes-Regular"
+
+            />
+    <include layout="@layout/util_horizontal_line_section"/>
+    <org.gmu.ui.GmuTextView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omnes Regular,24dip #EDF0F0"
+            android:textColor="?attr/gmu_text_color"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="24dip"
+            gmu:ttf_name="Omnes-Regular"
+
+            />
+    <include layout="@layout/util_horizontal_line_section"/>
+    <org.gmu.ui.GmuTextView
+
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omnes Regular,22dip #EDF0F0"
+            android:textColor="?attr/gmu_text_color"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="22dip"
+            gmu:ttf_name="Omnes-Regular"
+
+            />
+    <include layout="@layout/util_horizontal_line_section"/>
+    <org.gmu.ui.GmuTextView
+
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omnes Regular,20dip ?attr/gmu_text_color"
+            android:textColor="?attr/gmu_text_color"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="20dip"
+            gmu:ttf_name="Omnes-Regular"
+
+            />
+    <include layout="@layout/util_horizontal_line_section"/>
+    <org.gmu.ui.GmuTextView
+
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omnes Regular,18dip #EDF0F0"
+            android:textColor="?attr/gmu_text_color"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="18dip"
+            gmu:ttf_name="Omnes-Regular"
+
+            />
+    <include layout="@layout/util_horizontal_line_section"/>
+    <org.gmu.ui.GmuTextView
+
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omnes Regular,16dip #EDF0F0"
+            android:textColor="?attr/gmu_text_color"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="16dip"
+            gmu:ttf_name="Omnes-Regular"
+
+            />
+    <include layout="@layout/util_horizontal_line_section"/>
+    <org.gmu.ui.GmuTextView
+
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omnes Regular,14dip #EDF0F0"
+            android:textColor="?attr/gmu_text_color"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="14dip"
+            gmu:ttf_name="Omnes-Regular"
+
+            />
+    <include layout="@layout/util_horizontal_line_section"/>
+    <org.gmu.ui.GmuTextView
+
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omnes Regular,12dip #EDF0F0"
+            android:textColor="?attr/gmu_text_color"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="12dip"
+            gmu:ttf_name="Omnes-Regular"
+
+            />
+    <include layout="@layout/util_horizontal_line_section"/>
+    <org.gmu.ui.GmuTextView
+
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omnes Regular,10dip #EDF0F0"
+            android:textColor="?attr/gmu_text_color"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="10dip"
+            gmu:ttf_name="Omnes-Regular"
+
+            />
+    <include layout="@layout/util_horizontal_line_section"/>
+    <org.gmu.ui.GmuTextView
+
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omnes Regular,8dip #EDF0F0"
+            android:textColor="?attr/gmu_text_color"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="8dip"
+            gmu:ttf_name="Omnes-Regular"
+
+            />
+</LinearLayout>

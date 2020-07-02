@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/list_selector"
+        >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:padding="5dip">
+
+
+        <!--  ListRow Left sided Thumbnail image -->
+        <LinearLayout android:id="@+id/thumbnail"
+                      android:layout_width="wrap_content"
+                      android:layout_height="50dip"
+                      android:layout_toRightOf="@+id/prev"
+                >
+
+        </LinearLayout>
+
+        <!-- Description-->
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/categoryicon"
+                android:layout_toRightOf="@+id/categoryicon"
+                android:layout_toLeftOf="@+id/play"
+                android:text="Origen del templo"
+                android:lines="1"
+                android:maxLines="1"
+                android:typeface="sans"
+                android:textSize="10dip"
+                android:padding="5dip"
+                android:textStyle="bold"/>
+
+        <!-- current time -->
+        <TextView
+                android:id="@+id/currentpos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seek"
+
+                android:textSize="8dip"
+                android:layout_toRightOf="@+id/thumbnail"
+
+                android:text="2m23s"/>
+        <!-- total time -->
+        <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seek"
+                android:textSize="8dip"
+                android:layout_toLeftOf="@+id/play"
+                android:text="5m43s"/>
+
+        <!-- play pause -->
+        <ImageView
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play"
+                android:contentDescription="Play/Pause"
+                android:layout_toLeftOf="@+id/about"
+                android:layout_alignTop="@+id/thumbnail"
+
+                android:layout_centerVertical="true"/>
+        <!--info-->
+        <ImageView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/about"
+                android:contentDescription="About"
+                android:layout_toLeftOf="@+id/cancel"
+                android:layout_alignTop="@+id/thumbnail"
+
+                android:layout_centerVertical="true"/>
+        <!--cancel play-->
+        <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cancel"
+                android:contentDescription="Close"
+                android:layout_toLeftOf="@+id/next"
+                android:layout_alignTop="@+id/thumbnail"
+
+                android:layout_centerVertical="true"/>
+
+        <SeekBar android:id="@+id/seek"
+                 android:layout_width="fill_parent"
+
+                 android:layout_height="wrap_content"
+                 android:max="100"
+                 android:progress="0"
+                 android:layout_toRightOf="@+id/thumbnail"
+                 android:layout_toLeftOf="@+id/play"
+                 android:layout_below="@+id/title"/>
+
+        <!-- Rightend Arrow -->
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/navigation_next_item_light"
+                   android:contentDescription="Drilldown"
+                   android:id="@+id/next"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"/>
+        <!-- Leftend Arrow -->
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/previous_item"
+                   android:contentDescription="Previous"
+                   android:id="@+id/prev"
+                   android:layout_alignParentLeft="true"
+                   android:layout_centerVertical="true"
+
+                />
+
+        <ImageView android:id="@+id/categoryicon"
+                   android:layout_alignTop="@+id/thumbnail"
+                   android:layout_toRightOf="@+id/thumbnail"
+                   android:layout_width="25dip"
+                   android:layout_height="25dip"
+                   android:src="@drawable/one_icon"
+                   android:contentDescription="Drilldown"
+                />
+    </RelativeLayout>
+
+</LinearLayout>
