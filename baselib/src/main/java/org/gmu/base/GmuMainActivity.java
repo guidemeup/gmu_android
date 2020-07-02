@@ -1,6 +1,7 @@
 package org.gmu.base;
 
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -50,7 +51,9 @@ import org.gmu.utils.MapUtils;
 import org.gmu.utils.Utils;
 
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Locale;
 
 public class GmuMainActivity extends GmuFragmentActivity
@@ -891,6 +894,7 @@ public class GmuMainActivity extends GmuFragmentActivity
     }
     private final int REQUEST_CODE_ASK_PERMISSIONS_ST = 123;
 
+
     private void checkPermission() {
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
@@ -899,46 +903,30 @@ public class GmuMainActivity extends GmuFragmentActivity
 
         } else {
 
-            int hasLocationPermission = checkSelfPermission(android.Manifest.permission.ACCESS_FINE_LOCATION);
 
             int hasStoragePermission = checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE);
+            int hasLocationPermission = checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION);
 
-            if (hasLocationPermission != PackageManager.PERMISSION_GRANTED)
+
+
+
+            if (hasStoragePermission != PackageManager.PERMISSION_GRANTED ||hasLocationPermission != PackageManager.PERMISSION_GRANTED)
             {
 
 
 
+                //query for permisions
 
 
-                locationEnabled=false;
-
-
-            }else if (hasLocationPermission == PackageManager.PERMISSION_GRANTED){
-
-               // Toast.makeText(this, "The permissions are already granted ", Toast.LENGTH_LONG).show();
-
-                locationEnabled=true;
-            }
-
-            if (hasStoragePermission != PackageManager.PERMISSION_GRANTED)
-            {
-
-
-
-                //Toast.makeText(this, "No storage permissions", Toast.LENGTH_LONG).show();
-
-
-                requestPermissions(new String[] {android.Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                requestPermissions(new String[] {android.Manifest.permission.WRITE_EXTERNAL_STORAGE,android.Manifest.permission.ACCESS_FINE_LOCATION},
                         REQUEST_CODE_ASK_PERMISSIONS_ST);
 
                 locationEnabled=false;
 
 
-            }else if (hasStoragePermission == PackageManager.PERMISSION_GRANTED){
-
-              //  Toast.makeText(this, "The permissions are already granted ", Toast.LENGTH_LONG).show();
-
-
+            }else
+            {
+                locationEnabled=true;
             }
 
 
@@ -956,10 +944,23 @@ public class GmuMainActivity extends GmuFragmentActivity
                // Toast.makeText(this, "OK Permissions granted ! " + Build.VERSION.SDK_INT, Toast.LENGTH_LONG).show();
 
             } else {
-               // Toast.makeText(this, "Permissions are not granted ! " + Build.VERSION.SDK_INT, Toast.LENGTH_LONG).show();
+               // app can't continue without storage permissions
                 Controller.getInstance().close();
 
             }
+
+            if (grantResults.length>0&&grantResults[1] == PackageManager.PERMISSION_GRANTED)
+            {
+                //location available
+                locationEnabled=true;
+
+            } else {
+                locationEnabled=false;
+
+            }
+
+
+
         }else{
             super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         }

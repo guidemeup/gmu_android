@@ -23,6 +23,8 @@ public class Config extends ConfigBean {
         setBaseServer("http://www.guidemeup.com");
         setBaseServerGuides(getBaseServer()+"/guides");
         setAppType(APP_TYPE.STORE);
+        //unlock payed offline maps restriction
+        setPayMapsAllowed(true);
        // setPurchaseManager(new GooglePurchaseManager("MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmPJG6l5Qvf7bbsQVSBp8htTpT+3TgQkY4QSOEqyYx7K5UvbQI93K2Adx7nT9eJqNRgVPatUij2Uy2wS3Yh+7MCnaIAET7LAJrty6wxKviSY69T+j8gnAkAaF+0V9iCt6mo4r7IpWGJuATuEBhg5s2j4I1iaDSwEzWG2vebTNlk4HcXsjlJYEXKaqgqfrYM2wsRtobpFfjqO91utnvg93Z08DhNefoIOpEadCEUumiIFRzhN7A4cpCYcqvLqTKIS3mlO91+je5AySN9QZripT+KODVjjH/VGAi1bnlA4AsHnTm9muTXbWmDmOHKdNzZmy/+Dv4W/Mttp1xTp5YuhO5QIDAQAB"));
        // setTheme(R.style.GMU_Theme_Sherlock_Light_DarkActionBar);
       //  setAttribute(IConfig.TYPE_ORDER_PRIOR,IConfig.TYPE_ORDER_PRIOR_SAME_PRIOR);

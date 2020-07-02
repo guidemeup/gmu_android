@@ -11,8 +11,8 @@ android {
         applicationId "org.gmu.activities.alpha.pro"
         minSdkVersion 16
         targetSdkVersion 29
-        versionCode 60
-        versionName "6.0"
+        versionCode 61
+        versionName "6.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

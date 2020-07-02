@@ -27,9 +27,19 @@ public class GMUGroupLayer extends GroupLayer {
     }
     @Override
     public void draw(BoundingBox boundingBox, byte zoomLevel, org.mapsforge.core.graphics.Canvas canvas, Point topLeftPoint) {
-        Log.d(TAG,"On Draw "+this.name);
-        synchronized (this.layers) {   super.draw(boundingBox,zoomLevel,canvas,topLeftPoint);}
-        Log.d(TAG,"On Drawends "+this.name);
+
+        synchronized (this.layers)
+        {
+
+            try
+            {
+                super.draw(boundingBox,zoomLevel,canvas,topLeftPoint);
+            }catch (IllegalArgumentException ign)
+            {   //TODO: mapsforge bug?
+               Log.w(TAG,"ignored draw error ",ign);
+            }
+        }
+
     }
     public void  addLayer(Layer toAdd)
     {
