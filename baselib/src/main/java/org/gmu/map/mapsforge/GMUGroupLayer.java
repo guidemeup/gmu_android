@@ -34,9 +34,9 @@ public class GMUGroupLayer extends GroupLayer {
             try
             {
                 super.draw(boundingBox,zoomLevel,canvas,topLeftPoint);
-            }catch (IllegalArgumentException ign)
+            }catch (Exception ign)
             {   //TODO: mapsforge bug?
-               Log.w(TAG,"ignored draw error ",ign);
+               Log.w(TAG,"ignored draw error on layer= "+name,ign);
             }
         }
 

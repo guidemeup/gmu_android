@@ -264,13 +264,6 @@ public abstract class AbstractMapFragment extends GMUBaseFragment
     protected void setBaseMap(String baseMap) {
         String mapPath = baseMap;
 
-
-
-
-
-
-
-
         if (!Utils.equals(baseMap, currentBaseMap)) {
 
             currentBaseMap = baseMap;
@@ -680,7 +673,7 @@ public abstract class AbstractMapFragment extends GMUBaseFragment
                 }
             }else
             {   //limit minimum zoom
-                // if(center.zoom>DEFAULT_ZOOM){center.zoom=DEFAULT_ZOOM;}
+                if(center.zoom>DEFAULT_ZOOM){center.zoom=DEFAULT_ZOOM;}
 
             }
 

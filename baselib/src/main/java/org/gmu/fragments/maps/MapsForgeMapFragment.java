@@ -72,6 +72,7 @@ import static org.gmu.utils.MapUtils.OSM_BASE_TILES;
  */
 public class MapsForgeMapFragment extends AbstractMapFragment implements AbstractMapFragment.MapEventListener {
 
+    private static final byte MAX_MAP_ZOOM=19;
 
     private static final String TAG = MapsForgeMapFragment.class.getName();
 
@@ -348,12 +349,18 @@ public class MapsForgeMapFragment extends AbstractMapFragment implements Abstrac
 
     @Override
     protected void zoomIn() {
+        int initZoom= myOpenMapView.getModel().mapViewPosition.getZoomLevel();
         myOpenMapView.getModel().mapViewPosition.zoomIn();
+        Log.i(TAG,"Zoom in="+initZoom+"-->"+myOpenMapView.getModel().mapViewPosition.getZoomLevel());
+        myOpenMapView.onZoomEvent();
     }
 
     @Override
     protected void zoomOut() {
+        int initZoom= myOpenMapView.getModel().mapViewPosition.getZoomLevel();
         myOpenMapView.getModel().mapViewPosition.zoomOut();
+        Log.i(TAG,"Zoom in="+initZoom+"-->"+myOpenMapView.getModel().mapViewPosition.getZoomLevel());
+        myOpenMapView.onZoomEvent();
     }
 
     @Override
@@ -467,14 +474,13 @@ public class MapsForgeMapFragment extends AbstractMapFragment implements Abstrac
             if (path.size() > 0) {
                 // myOpenMapView.getController().setCenter(MapUtils.osm2MapsForge(path.get(0)));
                 byte zoom = myOpenMapView.getModel().mapViewPosition.getZoomLevel();
-                if (myOpenMapView.getMapZoomControls().getZoomLevelMax() < zoom) {
-                    zoom = myOpenMapView.getMapZoomControls().getZoomLevelMax();
+                if (myOpenMapView.getModel().mapViewPosition.getZoomLevelMax() < zoom) {
+                    zoom = myOpenMapView.getModel().mapViewPosition.getZoomLevelMax();
                 }
 
 
                 myOpenMapView.getModel().mapViewPosition.setCenter(MapUtils.location2MapsForge(path.get(0)));
-                myOpenMapView.getModel().mapViewPosition.zoom(zoom);
-
+                myOpenMapView.getModel().mapViewPosition.setZoomLevel(zoom,true);
             }
 
 
@@ -644,9 +650,13 @@ public class MapsForgeMapFragment extends AbstractMapFragment implements Abstrac
 
     public void onZoomLevelChanged() {
         byte zoomLevel = myOpenMapView.getModel().mapViewPosition.getZoomLevel();
-        boolean zoomInEnabled = zoomLevel < myOpenMapView.getMapZoomControls().getZoomLevelMax();
-        boolean zoomOutEnabled = zoomLevel > myOpenMapView.getMapZoomControls().getZoomLevelMin();
-        onZoomChangeListener.onZoom(zoomInEnabled, zoomOutEnabled);
+        boolean zoomInEnabled = zoomLevel < myOpenMapView.getModel().mapViewPosition.getZoomLevelMax();
+        boolean zoomOutEnabled = zoomLevel > myOpenMapView.getModel().mapViewPosition.getZoomLevelMin();
+
+
+        Log.i(TAG,"Zoom level changed to "+zoomLevel);
+        //Not necessary ,map position  handles max zoom level
+        //  onZoomChangeListener.onZoom(zoomInEnabled, zoomOutEnabled);
     }
 
 
@@ -767,7 +777,7 @@ public class MapsForgeMapFragment extends AbstractMapFragment implements Abstrac
         onlineTileSource.setName("online").setAlpha(false)
                 .setBaseUrl(prefix)
                 .setParallelRequestsLimit(8).setProtocol(protocol).setTileSize(256)
-                .setZoomLevelMax((byte) 18).setZoomLevelMin((byte) 0)
+                .setZoomLevelMax((byte) MAX_MAP_ZOOM).setZoomLevelMin((byte) 0)
                 .setExtension(extension);
         onlineTileSource.setUserAgent("mapsforge-samples-android");
 
@@ -805,7 +815,7 @@ public class MapsForgeMapFragment extends AbstractMapFragment implements Abstrac
 
         }
 
-
+        this.myOpenMapView.getModel().mapViewPosition.setZoomLevelMax(m.maxZoom);
         return m.maxZoom;
 
 
@@ -841,15 +851,15 @@ public class MapsForgeMapFragment extends AbstractMapFragment implements Abstrac
                 myOpenMapView.getModel().mapViewPosition.setCenter(MapUtils.location2MapsForge(location));
             }
 
-            if (zoom > myOpenMapView.getMapZoomControls().getZoomLevelMax()) {
+            if (zoom > myOpenMapView.getModel().mapViewPosition.getZoomLevelMax()) {
 
 
-                zoom = myOpenMapView.getMapZoomControls().getZoomLevelMax();
+                zoom = myOpenMapView.getModel().mapViewPosition.getZoomLevelMax();
             }
 
             Log.i(TAG, "Set center on zoom=" + zoom + "location=" + location + " ");
 
-            myOpenMapView.getModel().mapViewPosition.setZoomLevel(zoom);
+            myOpenMapView.getModel().mapViewPosition.setZoomLevel(zoom,true);
 
 
         } catch (Exception ign) {
@@ -965,6 +975,9 @@ public class MapsForgeMapFragment extends AbstractMapFragment implements Abstrac
 
 
             }
+            //limit zoom
+            myOpenMapView.getModel().mapViewPosition.setZoomLevelMax(MAX_MAP_ZOOM);
+           
             myOpenMapView.getLayerManager().getLayers().add(0, layer, true);
         }
 

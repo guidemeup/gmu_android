@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <group android:id="@+id/listmenu">
 
 
         <item
-                android:id="@+id/menu_search"
-                android:title="@string/search"
+            android:id="@+id/menu_search"
             android:icon="@drawable/ic_action_search"
+            android:title="@string/search"
             app:actionViewClass="org.gmu.ui.PlaceSearchView"
             app:showAsAction="ifRoom|collapseActionView" />
 
         <item
-                android:id="@+id/menu_switchtomap"
-                android:title="@string/mapview"
+            android:id="@+id/menu_switchtomap"
             android:icon="@drawable/ic_action_map"
+            android:title="@string/mapview"
             app:showAsAction="ifRoom" />
 
 
@@ -34,16 +34,16 @@
         <!--android:icon="@drawable/ic_collections_view_as_list"-->
         <!--android:visibility="gone"/>-->
         <item
-                android:id="@+id/menu_gps"
-                android:title="@string/center_location"
-                android:showAsAction="ifRoom"
-                android:icon="@drawable/ic_action_location_found"/>
+            android:id="@+id/menu_gps"
+            android:icon="@drawable/ic_action_location_found"
+            android:title="@string/center_location"
+            app:showAsAction="ifRoom" />
 
         <item
-                android:id="@+id/menu_refresh_map"
-                android:title="@string/refresh"
-                android:showAsAction="ifRoom"
-                android:icon="@drawable/ic_action_refresh"/>
+            android:id="@+id/menu_refresh_map"
+            android:icon="@drawable/ic_action_refresh"
+            android:title="@string/refresh"
+            app:showAsAction="ifRoom" />
 
 
         <!--<item-->
@@ -58,40 +58,42 @@
 
     <group android:id="@+id/detail_menu">
         <item
-                android:id="@+id/menu_centeronmap"
-                android:title="@string/center_map"
-                android:showAsAction="ifRoom"
-                android:icon="@drawable/ic_action_place"/>
+            android:id="@+id/menu_centeronmap"
+            android:icon="@drawable/ic_action_place"
+            android:title="@string/center_map"
+            app:showAsAction="ifRoom" />
         <item
-                android:id="@+id/menu_share"
-                android:title="@string/share"
-                android:showAsAction="ifRoom"
-                android:icon="@drawable/ic_action_share"/>
+            android:id="@+id/menu_share"
+            android:icon="@drawable/ic_action_share"
+            android:title="@string/share"
+            app:showAsAction="ifRoom" />
         <item
-                android:id="@+id/menu_directions"
-                android:title="@string/show_on_maps"
-                android:showAsAction="ifRoom"
-                android:icon="@drawable/ic_action_directions"/>
+            android:id="@+id/menu_directions"
+            android:icon="@drawable/ic_action_directions"
+            android:title="@string/show_on_maps"
+            app:showAsAction="ifRoom" />
 
         <item
-                android:id="@+id/menu_refresh"
-                android:title="@string/refresh"
-                android:showAsAction="ifRoom"
-                android:icon="@drawable/ic_action_refresh"/>
+            android:id="@+id/menu_refresh"
+            android:icon="@drawable/ic_action_refresh"
+            android:title="@string/refresh"
+            app:showAsAction="ifRoom" />
 
 
     </group>
     <group android:id="@+id/filters">
 
         <item
-                android:id="@+id/menu_favorite"
-                android:title="@string/favorite_off"
-                android:showAsAction="ifRoom"
-                android:icon="@drawable/ic_action_favorite_off"/>
+            android:id="@+id/menu_favorite"
+            android:icon="@drawable/ic_action_favorite_off"
+            android:title="@string/favorite_off"
+            app:showAsAction="ifRoom" />
 
 
-        <item android:id="@+id/menuitem_theme" android:showAsAction="ifRoom"
-              android:title="NextTheme"/>
+        <item
+            android:id="@+id/menuitem_theme"
+            android:title="NextTheme"
+            app:showAsAction="ifRoom" />
     </group>
 
 </menu>
