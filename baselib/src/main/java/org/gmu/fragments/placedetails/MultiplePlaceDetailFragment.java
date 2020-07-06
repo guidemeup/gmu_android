@@ -214,10 +214,11 @@ public class MultiplePlaceDetailFragment extends AbstractPlaceDetailFragment
             }
 
         }
+        adapter.notifyDataSetChanged();
+
 
         detailPager.setCurrentItem(selected);
 
-        adapter.notifyDataSetChanged();
 
         mIndicator.setViewPager(detailPager, selected);
 
