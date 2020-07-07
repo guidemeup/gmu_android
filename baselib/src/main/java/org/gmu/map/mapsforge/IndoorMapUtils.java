@@ -29,7 +29,7 @@ public class IndoorMapUtils {
         }
 
 
-        startZoom = (byte) maxZoomR;
+        startZoom = (byte) startZoomR;
         maxZoom = (byte) maxZoomR;
 
 
