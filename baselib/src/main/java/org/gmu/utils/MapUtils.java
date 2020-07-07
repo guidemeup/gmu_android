@@ -16,7 +16,7 @@ import java.util.StringTokenizer;
  */
 public class MapUtils {
 
-    private static final String[] INVALID_TILESOURCES=new String[]{"opencyclemap.org","mapbox"};
+    private static final String[] INVALID_TILESOURCES=new String[]{"opencyclemap.org","mapbox","mapcache.icc.cat"};
 
     public static final String[] OSM_BASE_TILES=new String[]{ "a.tile.openstreetmap.org", "b.tile.openstreetmap.org", "c.tile.openstreetmap.org"};
 
