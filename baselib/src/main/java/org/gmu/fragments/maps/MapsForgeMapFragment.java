@@ -22,6 +22,7 @@ import org.gmu.fragments.AbstractMapFragment;
 import org.gmu.map.mapsforge.GMUGroupLayer;
 import org.gmu.map.mapsforge.GMUMapsForgeMapView;
 import org.gmu.map.mapsforge.GMUMarker;
+import org.gmu.map.mapsforge.IndoorMapUtils;
 import org.gmu.pojo.OfflineMapDefinition;
 import org.gmu.pojo.PlaceElement;
 import org.gmu.utils.MapUtils;
@@ -307,14 +308,20 @@ public class MapsForgeMapFragment extends AbstractMapFragment implements Abstrac
             //create a TilestoreLayer with inmemory tile cache
 
 
-            TileStoreLayer tileStoreLayer = new TileStoreLayer(createInMemoryTileCache(new File(Controller.getInstance().getDao().getIndoorFilePath(relativeMapPath))),
+            File basePath=new File(Controller.getInstance().getDao().getIndoorFilePath(relativeMapPath));
+            TileStoreLayer tileStoreLayer = new TileStoreLayer(createInMemoryTileCache(basePath),
                     this.myOpenMapView.getModel().mapViewPosition, AndroidGraphicFactory.INSTANCE, false);
             setBaseMapLayer(tileStoreLayer);
 
 
             indoorMode = true;
+            IndoorMapUtils mUtils=new IndoorMapUtils(basePath.getAbsolutePath());
+
+            myOpenMapView.getModel().mapViewPosition.setZoomLevelMax(mUtils.getMaxZoom());
+            myOpenMapView.getModel().mapViewPosition.setZoomLevelMin(mUtils.getStartZoom());
 
             myOpenMapView.getModel().mapViewPosition.setZoomLevel((byte) 2);
+
 
 
         } else {
